@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_item_tvShow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="4dp"
+    card_view:cardPreventCornerOverlap="false"
+    android:divider="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/img_item_photo_tvShow"
+            android:layout_width="140dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/poster_movie"
+            android:scaleType="centerCrop"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            tools:src="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv_item_title_tvShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toTopOf="@+id/img_item_photo_tvShow"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/title_tvShow" />
+
+        <ImageView
+            android:id="@+id/tvShow_img_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_date_range"
+            card_view:layout_constraintStart_toEndOf="@+id/img_item_photo_tvShow"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_item_release_tvShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            card_view:layout_constraintStart_toEndOf="@+id/tvShow_img_date"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/tvShow_detail_release_date" />
+
+        <ImageView
+            android:id="@+id/tvShow_img_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_star_border"
+            card_view:layout_constraintStart_toEndOf="@+id/img_item_photo_tvShow"
+            card_view:layout_constraintTop_toBottomOf="@+id/tvShow_img_date" />
+
+        <TextView
+            android:id="@+id/tv_item_vote_tvShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            card_view:layout_constraintStart_toEndOf="@+id/tvShow_img_popularity"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_item_popularity_tvShow"
+            tools:text="@string/title_tvShow" />
+
+        <ImageView
+            android:id="@+id/tvShow_img_popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_playlist_add"
+            card_view:layout_constraintStart_toEndOf="@+id/img_item_photo_tvShow"
+            card_view:layout_constraintTop_toBottomOf="@+id/tvShow_img_rating" />
+
+        <TextView
+            android:id="@+id/tv_item_popularity_tvShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            card_view:layout_constraintStart_toEndOf="@+id/tvShow_img_rating"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_item_release_tvShow"
+            tools:text="@string/popular_tvShow" />
+
+        <ImageView
+            android:id="@+id/tvShow_img_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_language"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            card_view:layout_constraintStart_toEndOf="@+id/img_item_photo_tvShow"
+            card_view:layout_constraintTop_toBottomOf="@+id/tvShow_img_popularity" />
+
+        <TextView
+            android:id="@+id/tv_item_language_tvShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            card_view:layout_constraintStart_toEndOf="@+id/tvShow_img_language"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_item_vote_tvShow"
+            tools:text="@string/language_tvShow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

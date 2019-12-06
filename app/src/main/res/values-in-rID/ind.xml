@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieTvShow4</string>
+    <string name="poster_movie">Poster Movie</string>
+    <string name="title_movie">FILM</string>
+    <string name="title_tvShow">ACARA TV</string>
+    <string name="title_movie_favorite">FILM FAVORIT</string>
+    <string name="title_tvShow_favorite">ACARA TV FAVORIT</string>
+    <string name="title_favorite">FAVORIT</string>
+    <string name="change_setting">Ganti Bahasa</string>
+
+    <string name="title_movies_actionbar">FILM</string>
+    <string name="title_tvShow_actionbar">ACARA TV</string>
+    <string name="movie_detail_overview">Ikhtisar Film</string>
+    <string name="movie_detail_release_date">Tanggal Rilis Film</string>
+    <string name="movie_detail_language">Bahasa Film</string>
+    <string name="add_to_favorite">Tambah ke favorit</string>
+    <string name="tvShow_detail_overview">Ikhtisar Acara TV</string>
+
+    <string name="language_movie">Bahasa Film</string>
+    <string name="popular_movie">Popularitas Film</string>
+    <string name="poster_tvShow">Gambar Acara TV</string>
+    <string name="tvShow_detail_release_date">Tanggal rilis Acara TV</string>
+    <string name="popular_tvShow">Popularitas Acara TV</string>
+    <string name="language_tvShow">Bahasa Acara TV</string>
+    <string name="delete_from_favorite">Hapus dari favorit</string>
+    <string name="notify_question_delete">Apa kamu yakin akan menghapus item ini dari daftar favorit?</string>
+    <string name="notify_delete_movie">Hapus Film ini</string>
+    <string name="notify_delete_tvShow">Hapus Acara TV ini</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="notify_failed_delete_data">Hapus item gagal</string>
+    <string name="remove_from_favorite">Hapus dari favorit</string>
+
+</resources>
